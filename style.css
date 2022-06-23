@@ -1,0 +1,134 @@
+:root {
+    --background: #191E26;
+    --text: rgb(255, 1, 63);
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+  .active{
+    color: var(--text) !important;
+  }
+  body{
+    color: white;
+    background-color: var(--background);
+    scroll-behavior: smooth;
+  }
+  .navbar{
+    padding: 0 8%;
+  }
+  .nav-link {
+    margin-right: 10px;
+    color: white !important;
+  }
+  .nav-link:hover {
+    color: var(--text) !important;
+  }
+  .text-center{
+    margin-top: 10%;
+    color: var(--text);
+    font-family: 'Courier New', Courier, monospace;
+     }
+  .container {
+
+    width: 100%;
+    margin: auto;
+    height: 100%;
+}
+
+.card {
+  margin-top: 25px;
+  position: relative;
+  border: none;
+}
+.card .img-desc{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white !important;
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;height: 100%;
+    background-color: var(--text);
+    opacity: 0;
+    transition: opacity .4s ease-in;
+}
+.card .img-desc:hover{
+  border:  1px solid white;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.card_wrapper {
+    column-gap: 15px;
+    column-count: 2;
+}
+
+.card img {
+  border: none;
+    width: 100%;
+}
+
+.scroll-top-element{
+  background-color: var(--text) !important;
+}
+
+
+
+@media (max-width: 576px) {
+    .card_wrapper {
+        column-count: 2;
+    }
+    .cpp-section .right img{
+      width: 80%;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .card_wrapper {
+        column-count: 2;
+    }
+}
+
+.cpp-section{
+  display: flex;
+  flex-direction: column;
+flex-wrap: wrap;
+flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.cpp-section .left{
+  flex-basis: 80%;
+}
+.cpp-section .left h1{
+  color: var(--text);
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 10%;
+}
+.cpp-section .right img{
+}
+
+.resume{
+  background-color: #0f1622;
+  margin-top: 5%;
+  padding: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-gap: 40px;
+}
+
+.resume .right h1,.resume .right h4,a{
+   color: var(--text);
+}
+.resume .left img{
+  border: 2px solid rgb(255, 1, 63);
+  width: 300px;
+  height: 500px;
+}
+ul li::marker{
+  color: var(--text);
+}
+.soft ul li{
+  margin-bottom: 15px;
+}
